@@ -20,11 +20,12 @@ a {
     color: inherit;
 }
 #header {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-image: url('./main.png');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .container {
     max-width: 1200px;
@@ -145,8 +146,11 @@ nav .logo {
 }
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 16px 20px;
+    flex-direction: column;
+    line-height: 32px;
+    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
     align-items: center;
 }
 footer ul{
@@ -157,6 +161,7 @@ footer ul{
 footer .logo {
     color: var(--primary-dark);
 }
+
 
 
 /*Contact Page*/
@@ -205,7 +210,7 @@ form {
     width: 40px;
     height: 40px;
 }
-.detailh6 {
+.detail h6 {
     color: gray;
 }
 .followUsWrapper {
@@ -219,7 +224,55 @@ form {
     margin-top: 16px;
 }
 
+/*About Page*/
+#dish {
+    background-image: url(./talk-to-us.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 80px;
+}
+.dish-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap: 16px;
+    padding: 0 16px;
+}
+.dish-container h1 {
+    color: var(--primary-light);
+}
+.dish-container p {
+    max-width: 650px;
+    text-align: center;
+}
 
+/*Services*/
+#services-container {
+    margin-top: 80px;
+}
+.server {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-design {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.about-img-1 {
+    max-width: 100%;
+}
+.web-design h1 {
+    font-style: 32px;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+}
 
 
 
@@ -235,6 +288,24 @@ form {
     }
     .menu-btn {
         display: block;
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .about-content {
+        align-items: center;
+    }
+    #services-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .about-img-1 {
+        align-items: center;
     }
     nav {
         padding: 16px;
