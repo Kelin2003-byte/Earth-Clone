@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="contact-header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>EARTH</h1></div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-btn"><img src="./menu.svg" alt=""></div>
+            </nav>
+
+            <div class="header-content">
+                <h1>About Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="dish" class="dish-container">
+        <h1>WHAT WE ARE</h1>
+        <P>We all have multiple faces, multiple intents, all driven by our relationship with the other party.
+            we are biased, practical hypocrites lying constantly to ourselves, but still reassuring ourselves that we are better.
+        </P>
+    </section>
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <h1 class="logo">EARTH</h1>
+        <p>2026 Earth. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener("click", function(){
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
